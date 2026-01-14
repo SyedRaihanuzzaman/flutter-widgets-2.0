@@ -1,11 +1,12 @@
+import 'package:flutter_widgets/app/modules/popup-dropdown/views/popupmenuanddropdownmenu_view.dart';
 import 'package:get/get.dart';
 
 import '../modules/datetimewidget/bindings/datetimewidget_binding.dart';
 import '../modules/datetimewidget/views/datetimewidget_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
-import '../modules/popupmenuanddropdownmenu/bindings/popupmenuanddropdownmenu_binding.dart';
-import '../modules/popupmenuanddropdownmenu/views/popupmenuanddropdownmenu_view.dart';
+import '../modules/popup-dropdown/bindings/popupmenuanddropdownmenu_binding.dart';
+
 
 part 'app_routes.dart';
 

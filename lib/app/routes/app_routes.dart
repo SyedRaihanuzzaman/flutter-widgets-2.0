@@ -12,5 +12,5 @@ abstract class _Paths {
   _Paths._();
   static const HOME = '/home';
   static const DATETIMEWIDGET = '/datetimewidget';
-  static const POPUPMENUANDDROPDOWNMENU = '/popupmenuanddropdownmenu';
+  static const POPUPMENUANDDROPDOWNMENU = '/popup-dropdown';
 }
