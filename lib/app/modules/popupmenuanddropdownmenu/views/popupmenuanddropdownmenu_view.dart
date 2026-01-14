@@ -1,0 +1,59 @@
+import 'package:flutter/material.dart';
+
+import 'package:get/get.dart';
+
+import '../controllers/popupmenuanddropdownmenu_controller.dart';
+
+class PopupmenuanddropdownmenuView
+    extends GetView<PopupmenuanddropdownmenuController> {
+  const PopupmenuanddropdownmenuView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    String selectedValue = '';
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Popup and Dropdown Menu'),
+        centerTitle: true,
+
+        actions: [
+          PopupMenuButton<int>(
+            onSelected: (value) {
+              print('Value is : $value');
+            },
+            itemBuilder: (context) {
+              return [
+                // default style
+                // PopupMenuItem(value: 'item1', child: Text("Item 1")),
+                // PopupMenuItem(value: 'item2', child: Text("Item 2")),
+                // PopupMenuItem(value: 'item3', child: Text("Item 3")),
+                for (int i = 1; i <= 10; i++)
+                  PopupMenuItem(value: i, child: Text("Item $i")),
+              ];
+            },
+          ),
+        ],
+      ),
+      body: Center(
+        child: Obx(
+              () => DropdownButton<int>(
+            value: controller.selectedIndex.value,
+            items: [
+              for (int i = 0; i < controller.days.length; i++)
+                DropdownMenuItem<int>(
+                  value: i,
+                  child: Text(controller.days[i]),
+                ),
+            ],
+            onChanged: (value) {
+              if (value != null) {
+                controller.selectedIndex.value = value;
+              }
+            },
+          ),
+        ),
+      ),
+
+    );
+  }
+}

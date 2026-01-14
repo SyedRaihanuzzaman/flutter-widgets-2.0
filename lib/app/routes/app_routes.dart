@@ -5,10 +5,12 @@ abstract class Routes {
   Routes._();
   static const HOME = _Paths.HOME;
   static const DATETIMEWIDGET = _Paths.DATETIMEWIDGET;
+  static const POPUPMENUANDDROPDOWNMENU = _Paths.POPUPMENUANDDROPDOWNMENU;
 }
 
 abstract class _Paths {
   _Paths._();
   static const HOME = '/home';
   static const DATETIMEWIDGET = '/datetimewidget';
+  static const POPUPMENUANDDROPDOWNMENU = '/popupmenuanddropdownmenu';
 }
