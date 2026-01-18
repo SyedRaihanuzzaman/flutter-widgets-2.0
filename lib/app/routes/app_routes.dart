@@ -6,6 +6,7 @@ abstract class Routes {
   static const HOME = _Paths.HOME;
   static const DATETIMEWIDGET = _Paths.DATETIMEWIDGET;
   static const POPUPMENUANDDROPDOWNMENU = _Paths.POPUPMENUANDDROPDOWNMENU;
+  static const TEXTFORMFIELD = _Paths.TEXTFORMFIELD;
 }
 
 abstract class _Paths {
@@ -13,4 +14,5 @@ abstract class _Paths {
   static const HOME = '/home';
   static const DATETIMEWIDGET = '/datetimewidget';
   static const POPUPMENUANDDROPDOWNMENU = '/popup-dropdown';
+  static const TEXTFORMFIELD = '/textformfield';
 }
