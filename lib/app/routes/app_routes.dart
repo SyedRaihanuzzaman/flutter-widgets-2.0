@@ -7,6 +7,7 @@ abstract class Routes {
   static const DATETIMEWIDGET = _Paths.DATETIMEWIDGET;
   static const POPUPMENUANDDROPDOWNMENU = _Paths.POPUPMENUANDDROPDOWNMENU;
   static const TEXTFORMFIELD = _Paths.TEXTFORMFIELD;
+  static const DOWNLOAD_FILES = _Paths.DOWNLOAD_FILES;
 }
 
 abstract class _Paths {
@@ -15,4 +16,5 @@ abstract class _Paths {
   static const DATETIMEWIDGET = '/datetimewidget';
   static const POPUPMENUANDDROPDOWNMENU = '/popup-dropdown';
   static const TEXTFORMFIELD = '/textformfield';
+  static const DOWNLOAD_FILES = '/download-files';
 }
